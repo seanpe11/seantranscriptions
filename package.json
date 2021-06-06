@@ -1,0 +1,19 @@
+{
+  "name": "sspvas",
+  "version": "1.0.0",
+  "description": "sspvas website with views, contact form, and paypal api integration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Pe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "html2pug": "^4.0.0",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  }
+}

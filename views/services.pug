@@ -1,0 +1,83 @@
+extends base.pug
+
+block content
+  nav#mainNav.navbar.navbar-dark.navbar-expand-lg.fixed-top.bg-dark(style="background-color: rgba(0,0,0,0);color: rgb(255,255,255);")
+    .container
+      a.navbar-brand.js-scroll-trigger(href="/" style="font-family: Amiko, sans-serif;color: rgb(247,247,247);font-size: 50px;font-style: normal;font-weight: bold;")
+        img(src="assets/img/ssp%20logo.png" width="80")
+        em SSP Virtual Assistants
+      button.navbar-toggler.navbar-toggler-right(data-toggle="collapse" data-target="#navbarResponsive" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+        i.fa.fa-bars
+      #navbarResponsive.collapse.navbar-collapse
+        ul#nav-links.nav.navbar-nav.ml-auto.text-uppercase.text-shadow
+          li.nav-item(role="presentation")
+          li.nav-item(role="presentation")
+            a.nav-link.js-scroll-trigger(href="/services") SERVICES
+          li.nav-item(role="presentation")
+            a.nav-link.js-scroll-trigger(href="/rates") rates
+          li.nav-item(role="presentation")
+            a.nav-link.js-scroll-trigger(href="/rates") GET A QUOTE
+  section#services(style="padding: 60px;")
+    .container
+      .row
+        .col-lg-12.text-center
+          h2.text-uppercase.text-left.section-heading
+            i.fa.fa-plus
+            | &nbsp;Services
+          h3.text-left.text-muted.section-subheading See what you can get when you choose us&nbsp;&nbsp;
+      .row.text-center(style="margin-bottom: 0px;padding-bottom: 25px;")
+        .col-md-4
+          .shadow.box(data-aos="fade-down" style="font-size: 30px;padding: 21px;")
+            span.fa-stack.fa-4x(data-aos="fade-down" data-aos-duration="1000" style="font-size: 42px;")
+              i.fas.fa-square.fa-stack-2x.text-primary
+              i.fas.fa-funnel-dollar.fa-stack-1x.fa-inverse(style="font-size: 46px;")
+            span.text-left.d-xl-flex.justify-content-xl-center.align-items-xl-center(style="font-family: Montserrat, sans-serif;font-size: 22px;") LEAD GENERATION
+            .text-left(style="font-size: 15px;padding-top: 11px;")
+              p.text-justify
+                | Our VA&apos;s can generate any kind of leads for you; from cold calls, email marketing, to market research, our VA&apos;s can do it and have done so reliably for years.
+        .col-md-4
+          .shadow.box(data-aos="fade-down" style="font-size: 30px;padding: 21px;")
+            span.fa-stack.fa-4x(data-aos="fade-down" data-aos-duration="1000" style="font-size: 42px;")
+              i.fas.fa-square.fa-stack-2x.text-primary
+              i.fas.fa-mail-bulk.fa-stack-1x.fa-inverse(style="font-size: 46px;")
+            span.text-left.d-xl-flex.justify-content-xl-center.align-items-xl-center(style="font-family: Montserrat, sans-serif;font-size: 22px;") MEDIA MANAGEMENT
+            .text-left(style="font-size: 15px;padding-top: 11px;")
+              p.text-justify
+                | In today&apos;s world, everyone needs a website, a twitter, a blog, and a Facebook; but not everyone has the time. Let us handle that for you.
+        .col-md-4
+          .shadow.box(data-aos="fade-down" style="font-size: 30px;padding: 21px;")
+            span.fa-stack.fa-4x(data-aos="fade-down" data-aos-duration="1000" style="font-size: 42px;")
+              i.fas.fa-square.fa-stack-2x.text-primary
+              i.fas.fa-search-dollar.fa-stack-1x.fa-inverse(style="font-size: 46px;")
+            span.text-left.d-xl-flex.justify-content-xl-center.align-items-xl-center(style="font-family: Montserrat, sans-serif;font-size: 22px;") SKIP TRACING
+            .text-left(style="font-size: 15px;padding-top: 11px;")
+              p.text-justify
+                | We&apos;ve all seen it before; a house ripe for sale, but the owner nowhere to be found. Our VAs can track down that owner for you, so you can turn a sale.
+      .row.text-center
+        .col-md-4
+          .shadow.box(data-aos="fade-down" style="font-size: 30px;padding: 21px;")
+            span.fa-stack.fa-4x(data-aos="fade-down" data-aos-duration="1000" style="font-size: 42px;")
+              i.fas.fa-square.fa-stack-2x.text-primary
+              i.fas.fa-pen-fancy.fa-stack-1x.fa-inverse(style="font-size: 46px;")
+            span.text-left.d-xl-flex.justify-content-xl-center.align-items-xl-center(style="font-family: Montserrat, sans-serif;font-size: 22px;") DOCUMENT WRITING
+            .text-left(style="font-size: 15px;padding-top: 11px;")
+              p.text-justify
+                | From contracts to powerful presentations, our Virtual Assistants can handle writing professional, important documents in a timely manner.
+        .col-md-4
+          .shadow.box(data-aos="fade-down" style="font-size: 30px;padding: 21px;")
+            span.fa-stack.fa-4x(data-aos="fade-down" data-aos-duration="1000" style="font-size: 42px;")
+              i.fas.fa-square.fa-stack-2x.text-primary
+              i.fas.fa-database.fa-stack-1x.fa-inverse(style="font-size: 46px;")
+            span.text-left.d-xl-flex.justify-content-xl-center.align-items-xl-center(style="font-family: Montserrat, sans-serif;font-size: 22px;") DATA ENTRY
+            .text-left(style="font-size: 15px;padding-top: 11px;")
+              p.text-justify
+                | Your data is important, but it takes a lot of time to put it into a form that you can use. We&apos;re confidential, professional, and efficient when it comes to handling data.
+        .col-md-4
+          .shadow.box(data-aos="fade-down" style="font-size: 30px;padding: 21px;")
+            span.fa-stack.fa-4x(data-aos="fade-down" data-aos-duration="1000" style="font-size: 42px;")
+              i.fas.fa-square.fa-stack-2x.text-primary
+              i.fas.fa-phone-alt.fa-stack-1x.fa-inverse(style="font-size: 46px;")
+            span.text-left.d-xl-flex.justify-content-xl-center.align-items-xl-center(style="font-family: Montserrat, sans-serif;font-size: 22px;") CALL MANAGEMENT
+            .text-left(style="font-size: 15px;padding-top: 11px;")
+              p.text-justify
+                | Phone calls are very time consuming, and keeping track is even worse. Our VAs will clear your schedule by making and taking the calls you need.
